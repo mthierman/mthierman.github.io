@@ -4,18 +4,17 @@
 
 html {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 1.6rem;
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Nunito';
 }
 
 a:link {
@@ -32,76 +31,84 @@ a:hover {
     color: #D3D3D3;
     text-decoration: none;
     border-bottom: 5px solid #016FB9;
-    font-weight: bold;
+}
+
+a:active {
+    color: #016FB9;
+    text-decoration: none;
+    border-bottom: 5px solid #016FB9;
+}
+
+h1, h2 {
+    margin: 2rem;
+    padding: 0;
 }
 
 h1 {
-    font-size: 3em;
-    margin: 0;
-    padding: 0 0 1em 0;
+    font-size: 4.8rem;
 }
 
 h2 {
-    margin: 0;
-    padding: 0 0 1em 0;
+    font-size: 3.6rem;
 }
 
 .social {
-    color: #016FB9;
-    font-size: 2em;
-    margin: 1em;
+    font-size: 2.4rem;
+    padding: 2rem;
 }
 
 .copyright {
-    font-size: 0.75em;
+    padding: 2rem;
 }
 
-.copyright i {
-    color: #D3D3D3; 
-}
-
-i {
-    color: #016FB9;
-    padding: 0 0.25em;
-}
-
-a:hover i {
-    color: #D3D3D3;
-    text-decoration: none;
+div, section {
+    margin: auto;
+    padding: 0;
 }
 
 .container {
-    height:100%;
-    margin: 0;
-    padding: 0;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-items: center;
-    align-items: center;
-}
-
-svg {
-    margin: 3em auto;
-    display: none;
 }
 
 .leftPanel {
+    flex: 1;
     background-image: url(../images/desk.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
-    flex: 1;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
+    background-size: cover;
+    height: 100%;
 }
 
 .rightPanel {
     flex: 1;
-    margin: 0;
-    padding: 0;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.speaker {
+    width: 10rem;
+}
+
+.text {
+    white-space: nowrap;
+}
+
+.social a{
+    padding: 0 0.5rem;
+}
+
+svg {
+    display: none;
 }
 
 @media only screen and (max-width: 800px) {
