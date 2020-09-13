@@ -28,7 +28,8 @@ a:visited {
 }
 
 a:hover {
-    color: #D3D3D3;
+    color: #016FB9;
+    background-color: #E3F2FD;
     text-decoration: none;
     border-bottom: 5px solid #016FB9;
 }
@@ -37,6 +38,16 @@ a:active {
     color: #016FB9;
     text-decoration: none;
     border-bottom: 5px solid #016FB9;
+}
+
+.split {
+    padding: 0.5rem;
+    background-color: #E3F2FD;
+    border-bottom: 5px solid #016FB9;
+}
+
+a:hover.split {
+    color: #000000;
 }
 
 h1, h2 {
@@ -49,7 +60,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
 }
 
 .social {
